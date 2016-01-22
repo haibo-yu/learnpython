@@ -59,5 +59,5 @@ name = raw_input()
 if d.get(name, -1) == -1:
     print u'没有这个名字'
 else:
-    print name, d[name]
+    print u'%s的成绩是：%d分'%(name, d[name])
 
