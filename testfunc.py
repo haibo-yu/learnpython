@@ -36,6 +36,13 @@ def calc(*numbers):
 def person(name, age, **kw):
 	print 'name:', name, 'age:', age, 'other:', kw
 
+def fact(x):
+	if x == 1:
+		return 1
+	else:
+		return x * fact(x - 1)
+
+
 if __name__ == '__main__':
 	#print my_abs(55)
 	#print my_abs(-3)
@@ -47,5 +54,7 @@ if __name__ == '__main__':
 	#print calc(*num1)
 	#num2 = (4,5)
 	#print calc(*num2)
-	main()
+	print fact(5)
+	print fact(1)
+	#main()
 
